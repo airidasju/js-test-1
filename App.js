@@ -7,5 +7,10 @@ function compare(a, b) {
 
 
 //TASK 2
-
+function fromTo() {
+    for(let i=1; i<=10; i++) {
+        console.log(i)
+    }
+}
+// fromTo()
 
