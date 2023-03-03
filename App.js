@@ -23,3 +23,18 @@ function fromToDouble() {
     }
 }
 // fromToDouble()
+
+
+
+//TASK 4
+function fiveRandom() {
+    const arr = []
+    for(let i=0; i<5; i++) {
+        const randomNum = Math.floor(Math.random() * 11)
+        console.log(randomNum)
+        arr.push(randomNum)
+    }
+    console.log(arr)
+}
+// fiveRandom()
+
