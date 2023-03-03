@@ -96,7 +96,24 @@ function task8(a, b) {
 
 
 //TASK 9
-function task9(a, b) {
-   
+function task9(number) {
+    let isPrime = true
+    if(number < 2) {
+        console.log("Number is less than 2")
+        return number
+    }
+    for (let i = 2; i < number; i++) {
+        if (number % i == 0) {
+            isPrime = false;
+            break;
+        }
+    }
+    if (isPrime) {
+        console.log(`${number} is a prime number`);
+        return number
+    } else {
+        console.log(`${number} is a not prime number`);
+        return number
+    }
   }
-//   task9([5], [5]);
+  task9(45);
