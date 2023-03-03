@@ -48,8 +48,41 @@ function task5() {
 
 //TASK 6
 function task6() {
-  const myArr = [...Array(Math.floor(Math.random() * (30 - 20 + 1) ) + 20)].map(() => Math.floor(Math.random() * (30 - 10 + 1) ) + 10);
-  const highestNum = myArr.reduce((prev, curr) => prev > curr ? prev : curr)
+  const myArr = [...Array(Math.floor(Math.random() * (30 - 20 + 1)) + 20)].map(
+    () => Math.floor(Math.random() * (30 - 10 + 1)) + 10,
+  );
+  const highestNum = myArr.reduce((prev, curr) => (prev > curr ? prev : curr));
   console.log(myArr, highestNum);
 }
 // task6()
+
+//TASK 7
+function task7() {
+  const letters = ['A', 'B', 'C', 'D'];
+  const myArr = [...Array(100)].map(
+    () => letters[Math.floor(Math.random() * 4)],
+  );
+
+  const unique = {};
+
+  myArr.forEach((el) => {
+    unique[el] = (unique[el] || 0) + 1;
+  });
+  console.log(myArr, unique);
+}
+// task7();
+
+//TASK 8
+function task8(a, b) {
+  if (
+    (typeof a == 'number' && typeof b == 'number') ||
+    (typeof a == 'object' && typeof b == 'object')
+  ) {
+    console.log('They are of the same type', typeof a, typeof b);
+  } else {
+    console.log(`They are not of the same type`, typeof a, typeof b);
+  }
+}
+// task8(5, 5);
+
+
