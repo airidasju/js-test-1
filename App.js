@@ -74,14 +74,22 @@ function task7() {
 
 //TASK 8
 function task8(a, b) {
-  if (
-    (typeof a == 'number' && typeof b == 'number') ||
-    (typeof a == 'object' && typeof b == 'object')
-  ) {
-    console.log('They are of the same type', typeof a, typeof b);
-  } else {
-    console.log(`They are not of the same type`, typeof a, typeof b);
-  }
+    if (
+        (typeof a == 'number' && typeof b == 'number') ||
+        (typeof a == 'object' && typeof b == 'object')
+      ) {
+        if(typeof a == "number") {
+          const sum = a + b
+          console.log(sum)
+          return sum % 2 == 0 ? sum : console.log("Sum is not even")
+        } else {
+          const sum = a.length + b.length
+          console.log(sum)
+          return sum % 2 == 0 ? sum : console.log("Sum is not even")
+        }
+      } else {
+        console.log(`They are not of the same type`, typeof a, typeof b);
+      }
 }
 // task8(5, 5);
 
@@ -89,21 +97,6 @@ function task8(a, b) {
 
 //TASK 9
 function task9(a, b) {
-    if (
-      (typeof a == 'number' && typeof b == 'number') ||
-      (typeof a == 'object' && typeof b == 'object')
-    ) {
-      if(typeof a == "number") {
-        const sum = a + b
-        console.log(sum)
-        return sum % 2 == 0 ? sum : console.log("Sum is not even")
-      } else {
-        const sum = a.length + b.length
-        console.log(sum)
-        return sum % 2 == 0 ? sum : console.log("Sum is not even")
-      }
-    } else {
-      console.log(`They are not of the same type`, typeof a, typeof b);
-    }
+   
   }
 //   task9([5], [5]);
