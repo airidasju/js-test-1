@@ -38,3 +38,14 @@ function fiveRandom() {
 }
 // fiveRandom()
 
+
+
+//TASK 5
+function tenRandom() {
+    let i = 0
+    while(i < 10) {      
+        i == 9 ? console.log(5): console.log(Math.floor(Math.random() * 11));
+        i++
+    }
+}
+// tenRandom()
