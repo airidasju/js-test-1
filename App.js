@@ -1,51 +1,55 @@
-
 //TASK 1
-function compare(a, b) {
-    a > b ? console.log(`A is bigger (${a})`) : a==b ? console.log(`They are equal (${a}) (${b})`) : console.log(`B is bigger (${b})`)
+function task1(a, b) {
+  a > b
+    ? console.log(`A is bigger (${a})`)
+    : a == b
+    ? console.log(`They are equal (${a}) (${b})`)
+    : console.log(`B is bigger (${b})`);
 }
-// compare(5, 5)
-
+// task1(5, 5)
 
 //TASK 2
-function fromTo() {
-    for(let i=1; i<=10; i++) {
-        console.log(i)
-    }
+function task2() {
+  for (let i = 1; i <= 10; i++) {
+    console.log(i);
+  }
 }
-// fromTo()
-
-
+// task2()
 
 //TASK 3
-function fromToDouble() {
-    for(let i=0; i<=10; i+=2) {
-        console.log(i)
-    }
+function task3() {
+  for (let i = 0; i <= 10; i += 2) {
+    console.log(i);
+  }
 }
-// fromToDouble()
-
-
+// task3()
 
 //TASK 4
-function fiveRandom() {
-    const arr = []
-    for(let i=0; i<5; i++) {
-        const randomNum = Math.floor(Math.random() * 11)
-        console.log(randomNum)
-        arr.push(randomNum)
-    }
-    console.log(arr)
+function task4() {
+  const arr = [];
+  for (let i = 0; i < 5; i++) {
+    const randomNum = Math.floor(Math.random() * 11);
+    console.log(randomNum);
+    arr.push(randomNum);
+  }
+  console.log(arr);
 }
-// fiveRandom()
-
-
+// task4()
 
 //TASK 5
-function tenRandom() {
-    let i = 0
-    while(i < 10) {      
-        i == 9 ? console.log(5): console.log(Math.floor(Math.random() * 11));
-        i++
-    }
+function task5() {
+  let i = 0;
+  while (i < 10) {
+    i == 9 ? console.log(5) : console.log(Math.floor(Math.random() * 11));
+    i++;
+  }
 }
-// tenRandom()
+// task5()
+
+//TASK 6
+function task6() {
+  const myArr = [...Array(Math.floor(Math.random() * (30 - 20 + 1) ) + 20)].map(() => Math.floor(Math.random() * (30 - 10 + 1) ) + 10);
+  const highestNum = myArr.reduce((prev, curr) => prev > curr ? prev : curr)
+  console.log(myArr, highestNum);
+}
+// task6()
